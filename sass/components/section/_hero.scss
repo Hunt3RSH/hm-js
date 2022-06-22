@@ -1,0 +1,99 @@
+.hero-bg {
+    background: var(--background-color);
+    background-image:
+    linear-gradient(rgba(47,48,58,0.4),
+    rgba(47,48,58,0.4)),
+    url(../images/hero/sm/header1xsm.jpg);
+    object-fit:contain;
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: cover;
+    margin-inline: auto;
+
+    // 480
+    @media 
+    (min-device-pixel-ratio: 2),
+    (min-resolution: 2dppx) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/sm/header2xsm.jpg);
+    }
+    // 768
+    @media screen and (min-width: $min-brp-md) 
+    and (max-width: $max-brp-xl) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/md/header1xmd.jpg);
+        max-width: 1600px;
+
+
+        @media 
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image:
+            linear-gradient(rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),
+            url(../images/hero/md/header2xmd.jpg);
+        }
+    }
+
+
+
+    // 1600
+    @media screen and (min-width: $min-brp-xl) {
+        background-image:
+        linear-gradient(rgba(47,48,58,0.4),
+        rgba(47,48,58,0.4)),
+        url(../images/hero/xl/header1xxl.jpg);
+        max-width: 1600px;
+
+
+        @media 
+        (min-device-pixel-ratio: 2),
+        (min-resolution: 2dppx) {
+            background-image:
+            linear-gradient(rgba(47,48,58,0.4),
+            rgba(47,48,58,0.4)),
+            url(../images/hero/xl/header2xxl.jpg);
+        }
+    }
+
+    // positio
+    @media screen and (max-width: $max-brp-xl) {
+        padding-top: 118px;
+        padding-bottom: 118px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
+}
+.hero {
+    text-align: center;
+}
+.hero-title {
+    margin: 0;
+    font-style: normal;
+    font-weight: 900;
+    // font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    text-transform: uppercase;
+    color: var(--font-secondary);
+    letter-spacing: 0.06em;
+    text-shadow: 0px 4px 4px var(--shadow);
+    margin: 0 auto;
+    @media screen and (max-width: $max-brp-xl) {
+        max-width: 360px;
+        font-size: 26px;
+    }
+    // @media screen and (min-width: $min-brp-md) {
+
+    // }
+    @media screen and (min-width: $min-brp-xl) {
+        width: 696px;
+        font-size: 44px;
+    }
+}

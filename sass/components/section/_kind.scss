@@ -1,0 +1,35 @@
+.kind-hide {
+    @media screen and (max-width: $max-brp-xl) {
+        display: none;
+    }
+}
+
+.kind {
+    display: flex;
+    width: 100%;
+    gap: 30px;
+
+}
+.kind-box {
+    position: relative;
+    width: calc((100% - 60px) / 3);
+}
+.kind-box__img {
+    display: block;
+    width: 100%;
+}
+.kind-box__title {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    left: 0;
+    padding: 27px 10px;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--font-secondary);
+    background-color: var(--bg-kind);
+}

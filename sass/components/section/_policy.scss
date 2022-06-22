@@ -1,0 +1,64 @@
+.ty {
+    margin-top: 94px;
+}
+@keyframes bg-body {
+    0%{
+        background-position: 0 50%;
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+    100%{
+        background-position: 0 50%;
+    }
+}
+.policy-ty {
+    display: inline-block;
+    margin-top: 0;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 1.166;
+    text-align: center;
+    margin-bottom: 50px;
+    letter-spacing: 0.03em;
+    color: var(--font-main);
+    position: relative;
+    overflow: hidden;
+    text-align: center;
+    @media screen and (max-width: $max-brp-sm) {
+        font-size: 35px;
+    }
+    @media screen and (min-width: $min-brp-sm) {
+        font-size: 80px;
+    }
+    @media screen and (min-width: $min-brp-xl) {
+        font-size: 120px;
+    }
+}
+.warning-title {
+    margin-top: 30px;
+    color: white;
+    font-weight: 900;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.warning-title1 {
+    margin-top: 30px;
+    color: white;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
+.warning-title2 {
+    margin-top: 30px;
+    color: white;
+    font-weight: 900;
+    font-size: 70px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+}
