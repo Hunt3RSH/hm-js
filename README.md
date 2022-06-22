@@ -1,4 +1,4 @@
-# goit-markup-hw-08
+# HM JS 2.0
 
 
-mobile
+module 1
