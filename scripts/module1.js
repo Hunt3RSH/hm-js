@@ -82,3 +82,46 @@
 //     console.log(makeOrderMessage(10, 70, 200));
 
 // Задача 13 ///////////////////////////////////////////////////////
+
+// function isAdult(age) {
+//     const passed = (age >= 18);
+//     return passed;
+//   }
+//   console.log(isAdult(20))
+//   console.log(isAdult(14))
+//   console.log(isAdult(8))
+//   console.log(isAdult(37))
+
+// Задача 14 ///////////////////////////////////////////////////////
+
+// function isValidPassword(password) {
+//     const SAVED_PASSWORD = 'jqueryismyjam';
+//     const isMatch = password === SAVED_PASSWORD;
+
+//     return isMatch;
+//   }
+//   console.log(isValidPassword("mangodab3st"))
+//   console.log(isValidPassword("kiwirul3z"))
+//   console.log(isValidPassword("jqueryismyjam"))
+
+
+  // Задача 15 ///////////////////////////////////////////////////////
+
+
+//   function checkAge(age) {
+//     let message;
+  
+//     if (age >= 18) {
+//       message = 'You are an adult';
+//     } else {
+//       message = 'You are a minor';
+//     }
+  
+//     return message;
+//   }
+//   console.log(checkAge(20))
+//   console.log(checkAge(8))
+//   console.log(checkAge(14))
+//   console.log(checkAge(38))
+
+  // Задача 16 ///////////////////////////////////////////////////////
