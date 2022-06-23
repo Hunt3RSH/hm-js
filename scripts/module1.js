@@ -275,30 +275,62 @@
 // console.log(checkPassword("jqueryismyjam"));
 // console.log(checkPassword("angul4r1sl1f3"));
 
-// Задача 27 ////////////////////////////////////////////////////// 222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222222
+// Задача 27 ////////////////////////////////////////////////////// 222222222222222222222222222222222222222222222222222222222222222222222222222222222222
 
-function getSubscriptionPrice(type) {
-  let price;
-  // Change code below this line
+// function getSubscriptionPrice(type) {
+// 	let price;
 
- switch (tyoe) { // Change this line
-    case : // Change this line
-      price = 0; // Change this line
-      break;
+// 	switch (type) {
+// 		case "starter":
+// 			price = 0;
+// 			break;
 
-    case : // Change this line
-      price = 20; // Change this line
-      break;
+// 		case "professional":
+// 			price = 20;
+// 			break;
 
-    case : // Change this line
-      price = 50; // Change this line
-      break;
-  }
+// 		case "organization":
+// 			price = 50;
+// 			break;
+// 	}
 
-  // Change code above this line
-  return price;
+// 	return price;
+// }
+
+// console.log(getSubscriptionPrice("organization"));
+// console.log(getSubscriptionPrice("starter"));
+// console.log(getSubscriptionPrice("professional"));
+
+// Задача 28 //////////////////////////////////////////////////////
+
+// function checkPassword(password) {
+// 	const ADMIN_PASSWORD = "jqueryismyjam";
+// 	let message;
+//     switch (password) {
+// 			case null:
+// 				message = "Canceled by user!";
+// 				break;
+
+// 			case ADMIN_PASSWORD:
+// 				message = "Welcome!";
+// 				break;
+
+//             default:
+// 				message = "Access denied, wrong password!";
+// 		}
+
+// 	return message;
+// }
+
+// console.log(checkPassword("mangohackzor"));
+// console.log(checkPassword(null));
+// console.log(checkPassword("polyhax"));
+// console.log(checkPassword("jqueryismyjam"));
+
+// Задача 29 //////////////////////////////////////////////////////
+
+function getShippingCost(country) {
+    let message;
+    
+	return message;
 }
-
-console.log(getSubscriptionPrice("organization"));
-console.log(getSubscriptionPrice("starter"));
-console.log(getSubscriptionPrice("professional"))
