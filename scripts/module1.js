@@ -329,8 +329,124 @@
 
 // Задача 29 //////////////////////////////////////////////////////
 
-function getShippingCost(country) {
-    let message;
-    
-	return message;
+// function getShippingCost(country) {
+// 	let message;
+// 	const country1 = "China";
+// 	const country2 = "Chile";
+// 	const country3 = "Australia";
+//     const country4 = "Jamaica";
+//     let price;
+
+// 	switch (country) {
+//         case country1:
+//             price = 100;
+// 			message = `Shipping to ${country1} will cost ${price} credits`;
+// 			break;
+//         case country2:
+//             price = 250;
+// 			message = `Shipping to ${country2} will cost ${price} credits`;
+// 			break;
+//         case country3:
+//             price = 170;
+// 			message = `Shipping to ${country3} will cost ${price} credits`;
+// 			break;
+//         case country4:
+//             price = 120;
+//             message = `Shipping to ${country4} will cost ${price} credits`;
+// 			break;
+
+// 		default:
+// 			message = "Sorry, there is no delivery to your country";
+// 	}
+
+// 	return message;
+// }
+// console.log(getShippingCost("Australia"));
+// console.log(getShippingCost("Jamaica"));
+
+// Задача 30 //////////////////////////////////////////////////////
+
+// function getNameLength(name) {
+//   const message = `Name ${name} is ${name.length} characters long`; // Change this line
+
+//   return message;
+// }
+
+// console.log(getNameLength("Harambe"));
+
+// Задача 31 //////////////////////////////////////////////////////
+
+// const courseTopic = "JavaScript essentials";
+// // Change code below this line
+
+// const courseTopicLength = courseTopic.length;
+// const firstElement = courseTopic[0];
+// const lastElement = courseTopic[courseTopic.length - 1];
+
+// // Change code above this line
+// console.log(courseTopicLength);
+// console.log(firstElement);
+// console.log(lastElement);
+
+// Задача 32 //////////////////////////////////////////////////////
+
+// function getSubstring(string, length) {
+//   const substring =string.slice(0, length) ; // Change this line
+
+//   return substring;
+// }
+
+// Задача 33 //////////////////////////////////////////////////////
+
+// function formatMessage(message, maxLength) {
+// 	let result;
+// 	const TopicLength = message.length;
+// 	if (maxLength < TopicLength) {
+//         result = message.slice(0, maxLength)+"...";
+//     } else {
+//         result = message.slice(0, maxLength)
+//     }
+// 	return result;
+// }
+
+// console.log(formatMessage("Nunc sed turpis a felis in nunc fringilla", 11));
+
+// Задача 34 //////////////////////////////////////////////////////
+
+// function normalizeInput(input) {
+//     const normalizedInput = input.toLowerCase();
+
+//   return normalizedInput;
+// }
+// console.log(normalizeInput("Hello world"))
+
+// Задача 35 //////////////////////////////////////////////////////
+
+// function checkForName(fullName, name) {
+//  const result = fullName.includes(name);
+//   return result;
+// }
+// console.log(checkForName("Egor Kolbasov", "Egor"))
+// console.log(checkForName("Egor Kolbasov", "egor"));
+
+// Задача 36 //////////////////////////////////////////////////////
+
+function checkForSpam(message) {
+	let result;
+	let LowerCase;
+	LowerCase = message.toLowerCase();
+    console.log(LowerCase);
+    if (LowerCase.includes("spam")) {
+        result = true;
+    } else if (LowerCase.includes("sale")) {
+        result = true;
+    } else {
+        result = false
+    }
+
+	return result;
 }
+console.log(checkForSpam("Amazing , only tonight!"));
+console.log(checkForSpam("Get best sale offers now!"));
+console.log(checkForSpam("[SPAM] How to earn fast money?"));
+console.log(checkForSpam("Trust me, this is not a spam message"));
