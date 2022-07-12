@@ -431,22 +431,22 @@
 
 // Задача 36 //////////////////////////////////////////////////////
 
-function checkForSpam(message) {
-	let result;
-	let LowerCase;
-	LowerCase = message.toLowerCase();
-    console.log(LowerCase);
-    if (LowerCase.includes("spam")) {
-        result = true;
-    } else if (LowerCase.includes("sale")) {
-        result = true;
-    } else {
-        result = false
-    }
+// function checkForSpam(message) {
+// 	let result;
+// 	let LowerCase;
+// 	LowerCase = message.toLowerCase();
+//     console.log(LowerCase);
+//     if (LowerCase.includes("spam")) {
+//         result = true;
+//     } else if (LowerCase.includes("sale")) {
+//         result = true;
+//     } else {
+//         result = false
+//     }
 
-	return result;
-}
-console.log(checkForSpam("Amazing , only tonight!"));
-console.log(checkForSpam("Get best sale offers now!"));
-console.log(checkForSpam("[SPAM] How to earn fast money?"));
-console.log(checkForSpam("Trust me, this is not a spam message"));
+// 	return result;
+// }
+// console.log(checkForSpam("Amazing , only tonight!"));
+// console.log(checkForSpam("Get best sale offers now!"));
+// console.log(checkForSpam("[SPAM] How to earn fast money?"));
+// console.log(checkForSpam("Trust me, this is not a spam message"));
