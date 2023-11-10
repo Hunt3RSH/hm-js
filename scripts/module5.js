@@ -578,54 +578,80 @@
 
 // задача 20 _______________________________________________________________________________________________________
 
-class User {
-	email;
+// class User {
+// 	email;
 
-	constructor(email) {
-		this.email = email;
+// 	constructor(email) {
+// 		this.email = email;
+// 	}
+
+// 	get email() {
+// 		return this.email;
+// 	}
+
+// 	set email(newEmail) {
+// 		this.email = newEmail;
+// 	}
+// }
+// class Admin extends User {
+// 	// Change code below this line
+
+// 	static AccessLevel = {
+// 		BASIC: "basic",
+// 		SUPERUSER: "superuser",
+// 	};
+
+// 	constructor({ email, accessLevel }) {
+// 		super(email);
+// 		this.accessLevel = accessLevel;
+// 	}
+// 	blacklistedEmails = [];
+
+// 	blacklist(email) {
+// 		return this.blacklistedEmails.push(email);
+// 	}
+// 	isBlacklisted(email) {
+// 		return this.email !== email;
+// 	}
+
+// 	// Change code above this line
+// }
+
+// const mango = new Admin({
+// 	email: "mango@mail.com",
+// 	accessLevel: Admin.AccessLevel.SUPERUSER,
+// });
+
+// console.log(mango.email); // "mango@mail.com"
+// console.log(mango.accessLevel); // "superuser"
+
+// mango.blacklist("poly@mail.com");
+// console.log(mango.blacklistedEmails); // ["poly@mail.com"]
+// console.log(mango.isBlacklisted("mango@mail.com")); // false
+// console.log(mango.isBlacklisted("poly@mail.com")); // true
+
+// uniqueInOrder("AAAABBBCCDAABBB") == ["A", "B", "C", "D", "A", "B"];
+// uniqueInOrder("ABBCcAD") == ["A", "B", "C", "c", "A", "D"];
+// uniqueInOrder([1, 2, 2, 3, 3]) == [1, 2, 3];
+
+// const uniqueInOrder = element => [...new Set(element)]; // only unique
+const uniqueInOrder = array => {
+	const res = [];
+	for (let i = 0; i < array.length; i++) {
+		if (array[i] !== array[i + 1]) {
+			res.push(array[i]);
+		}
 	}
+	return res;
+};
 
-	get email() {
-		return this.email;
-	}
+// const uniqueInOrder = array => {
+// 	return array.reduce((acc, element, index) => {
+// 		if (array[index] !== array[index + 1]) {
+// 			acc.push(element);
+// 		}
+// 		return acc;
+// 	}, []);
+// };
 
-	set email(newEmail) {
-		this.email = newEmail;
-	}
-}
-class Admin extends User {
-	// Change code below this line
-
-	static AccessLevel = {
-		BASIC: "basic",
-		SUPERUSER: "superuser",
-	};
-
-	constructor({ email, accessLevel }) {
-		super(email);
-		this.accessLevel = accessLevel;
-	}
-	blacklistedEmails = [];
-
-	blacklist(email) {
-		return this.blacklistedEmails.push(email);
-	}
-	isBlacklisted(email) {
-		return this.email !== email;
-	}
-
-	// Change code above this line
-}
-
-const mango = new Admin({
-	email: "mango@mail.com",
-	accessLevel: Admin.AccessLevel.SUPERUSER,
-});
-
-console.log(mango.email); // "mango@mail.com"
-console.log(mango.accessLevel); // "superuser"
-
-mango.blacklist("poly@mail.com");
-console.log(mango.blacklistedEmails); // ["poly@mail.com"]
-console.log(mango.isBlacklisted("mango@mail.com")); // false
-console.log(mango.isBlacklisted("poly@mail.com")); // true
+console.log(uniqueInOrder("AAAABBBCCDAABBB"));
